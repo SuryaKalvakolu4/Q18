@@ -26,14 +26,14 @@
     </style>
 </head>
 <body>
-    <h1>Station 3</h1>
+    <h1>Station 11</h1>
     <div id="question"></div>
     <div id="options"></div>
     <button onclick="nextQuestion()">SUBMIT</button>
     <script>
         // Function to clear the quiz score from local storage
 function clearQuizScore() {
-    localStorage.removeItem("Station_3_Score");
+    localStorage.removeItem("Station_11_Score");
 }
 
 // Function to clear local storage when the tab is closed or refreshed
@@ -53,7 +53,7 @@ window.addEventListener('beforeunload', function() {
         ];
 
         let currentQuestion = 0;
-        let Station_3_Score = 0;
+        let Station_11_Score = 0;
 
         // Function to display current question
         function displayQuestion() {
