@@ -95,9 +95,9 @@ window.addEventListener('beforeunload', function() {
     }
 
     if (!isAnswered || selectedOption !== quiz[currentQuestion].answer) {
-        Station_3_Score = 0; // Assign zero score if question is not attempted or answered incorrectly
+        Station_11_Score = 0; // Assign zero score if question is not attempted or answered incorrectly
     } else {
-        Station_3_Score++; // Increment score for correct answer
+        Station_11_Score++; // Increment score for correct answer
     }
 }
 
@@ -108,8 +108,8 @@ window.addEventListener('beforeunload', function() {
 
             if (currentQuestion === quiz.length) {
                 // All questions answered, store score in local storage
-                localStorage.setItem("Station_3_Score", Station_3_Score);
-                alert("Quiz completed. Your score is " + Station_3_Score);
+                localStorage.setItem("Station_3_Score", Station_11_Score);
+                alert("Quiz completed. Your score is " + Station_11_Score);
             } else {
                 displayQuestion();
             }
